@@ -5,21 +5,21 @@
 class Pipe < Formula
   desc "CI-friendly pipeline runner inspired by Taskfile"
   homepage "https://github.com/idestis/pipe"
-  version "1.1.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/idestis/pipe/releases/download/v1.1.0/pipe-1.1.0-darwin-amd64.tar.gz"
-      sha256 "f7c1fdac035579701c8b313b8320254d2559118ceb2d0bfd2db12a2b90402631"
+      url "https://github.com/idestis/pipe/releases/download/v2.0.0/pipe-2.0.0-darwin-amd64.tar.gz"
+      sha256 "915b3b76c1b42abee32b552a8ced19822fa5f5a90497551a19bdff2667130109"
 
       def install
         bin.install "pipe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/idestis/pipe/releases/download/v1.1.0/pipe-1.1.0-darwin-arm64.tar.gz"
-      sha256 "d52096ef27693efb9ede69831dcc3c77c6238f094f98151688839b77009734d1"
+      url "https://github.com/idestis/pipe/releases/download/v2.0.0/pipe-2.0.0-darwin-arm64.tar.gz"
+      sha256 "e3be81e4d522971a5022139238d89ce7a77d6346c90aabc2567e74103976393d"
 
       def install
         bin.install "pipe"
@@ -29,15 +29,15 @@ class Pipe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/idestis/pipe/releases/download/v1.1.0/pipe-1.1.0-linux-amd64.tar.gz"
-      sha256 "33251d8428df72681e718e443286cb65975c698b1775a986d78913f408c41915"
+      url "https://github.com/idestis/pipe/releases/download/v2.0.0/pipe-2.0.0-linux-amd64.tar.gz"
+      sha256 "f5c56403d902ae15c84aa1c5f475824cd079746cc6e5e2177f273dca10b201eb"
       def install
         bin.install "pipe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/idestis/pipe/releases/download/v1.1.0/pipe-1.1.0-linux-arm64.tar.gz"
-      sha256 "def650cf2f9467b9d114a0d814a5f986380b62cbd76c21672fcedc4b8645a665"
+      url "https://github.com/idestis/pipe/releases/download/v2.0.0/pipe-2.0.0-linux-arm64.tar.gz"
+      sha256 "8b44b3fd4b011f1ded72b1bb3495712373d3ace5f7eb7d9a000c1f4ea3456255"
       def install
         bin.install "pipe"
       end
