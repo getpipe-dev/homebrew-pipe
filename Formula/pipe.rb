@@ -5,21 +5,21 @@
 class Pipe < Formula
   desc "CI-friendly pipeline runner inspired by Taskfile"
   homepage "https://github.com/getpipe-dev/pipe"
-  version "2.3.0"
+  version "2.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.0/pipe-2.3.0-darwin-amd64.tar.gz"
-      sha256 "624ac55b789ce428cd41b3a18555f7444c6702e842fc10e65ef6dc35f8223656"
+      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.1/pipe-2.3.1-darwin-amd64.tar.gz"
+      sha256 "45d2cba79fd3a5b0c0eaa4a8c38118503584aa402f816cc36e09a5403c89660f"
 
       define_method(:install) do
         bin.install "pipe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.0/pipe-2.3.0-darwin-arm64.tar.gz"
-      sha256 "a6f892725a7514f703fa3e98c1c9c8b550c8047278d0731280bb6347248fcda2"
+      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.1/pipe-2.3.1-darwin-arm64.tar.gz"
+      sha256 "02881b84d91f769499d7dcc569bd077cf4e8c5ee0f22a134af3f1fde26202b99"
 
       define_method(:install) do
         bin.install "pipe"
@@ -29,15 +29,15 @@ class Pipe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.0/pipe-2.3.0-linux-amd64.tar.gz"
-      sha256 "5627ebca858580e835e6af04ea51b1b701abc228e4a1b7fcd0c8b8fb25d7d299"
+      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.1/pipe-2.3.1-linux-amd64.tar.gz"
+      sha256 "dcad46eaf163d78ba16cca117ac6831c0be6ba99a42916ea39615e5bff8fb4c1"
       define_method(:install) do
         bin.install "pipe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.0/pipe-2.3.0-linux-arm64.tar.gz"
-      sha256 "d083130406dadfb68bf67c148cf93365cda0fdbd5ca2f249151970fa6cc96f64"
+      url "https://github.com/getpipe-dev/pipe/releases/download/v2.3.1/pipe-2.3.1-linux-arm64.tar.gz"
+      sha256 "7046865b2497c84f58b508db515c2358aef5191273088df309c8784f14b37708"
       define_method(:install) do
         bin.install "pipe"
       end
